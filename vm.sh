@@ -4,7 +4,7 @@ IFS="
 VM=$1
 IP=$2
 PORT=$3
-VMX_DIR="/Users/evan/Documents/Virtual Machines.localized/"
+VMX_DIR="${HOME}/Documents/Virtual Machines.localized/"
 VMRUN="/Applications/VMware Fusion.app/Contents/Library/vmrun"
 NCAT="/usr/local/bin/ncat"
 
