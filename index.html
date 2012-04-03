@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Code : " />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Code</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/syndrowm/code">Fork Me on GitHub</a>
+
+          <h1 id="project_title">Code</h1>
+          <h2 id="project_tagline"></h2>
+
+          <section id="downloads">
+            <a class="zip_download_link" href="https://github.com/syndrowm/code/zipball/master">Download this project as a .zip file</a>
+            <a class="tar_download_link" href="https://github.com/syndrowm/code/tarball/master">Download this project as a tar.gz file</a>
+          </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>Uber leet code</h3>
+
+<p>Too be like all the cool kids, I needed to put something up here. So here are some really simple tools I have randomly written.</p>
+
+<h3>apy</h3>
+
+<p>apy is a simple replacemet for stuff I use awk for.  Basically I just wanted to type less.</p>
+
+<p>So you can:</p>
+
+<pre><code>$ echo "zero:one:two:three" | apy -F: -N, 3 2 1 0
+three,two,one,zero
+</code></pre>
+
+<p>Instead of:</p>
+
+<pre><code>$ echo "one:two:three:four" | awk -F: '{print $4","$3","$2","$1"}
+</code></pre>
+
+<p>You can also use slices (think python lists).</p>
+
+<pre><code>$ echo "zero:one:two:three" | apy -F: 1:
+one two three
+</code></pre>
+
+<p>Lastly if you leave off the offsets to use apy will list them for you.</p>
+
+<pre><code>$ echo "zero:one:two:three" | apy -F:
+[0]zero [1]one [2]two [3]three
+</code></pre>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Code maintained by <a href="https://github.com/syndrowm">syndrowm</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
